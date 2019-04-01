@@ -16,16 +16,40 @@ public abstract class Card
 	private int face;
 
   	//constructors
-
+        public Card()
+        {
+            setFace(0);
+            setSuit("");
+        }
+        
+        public Card(int f, String s)
+        {
+            setSuit(s);
+            setFace(f);
+        }
 
 
 	// modifiers
-
+        public void setSuit(String s)
+        {
+            suit = s;
+        }
+        public void setFace(int f)
+        {
+            face = f;
+        }
 
  
 
   	//accessors
-
+        public int getFace()
+        {
+            return face;
+        }
+        public String getSuit()
+        {
+            return suit;
+        }
 
 
 
@@ -34,12 +58,18 @@ public abstract class Card
 
 	public boolean equals(Object obj)
 	{
-
-
-
+            Card c = new BlackJackCard();
+            c=(Card)obj;
+		if (c.getSuit() == suit && c.getValue() == getFace())
+                {
+                    return true;
+		}
 		return false;
 	}
 
   	//toString
-  	
+  	public String toString()
+        {
+            return FACES[face] + " of " + suit;
+        }
  }
