@@ -38,8 +38,10 @@ public class BlackJack
             out.println("Cards in Hand :: " + player.toString() );
             out.println("Do you want to hit :: y/n");
             playerHit = keyboard.nextLine();
-            while(playerTotal<21 && playerHit == "y")
-
+            while(playerTotal<21 && playerHit.equals("y"))
+            {
+                
+            }
 
 
         }while(choice=='y');
