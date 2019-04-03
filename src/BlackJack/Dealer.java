@@ -49,6 +49,7 @@ public class Dealer extends AbstractPlayer
 	//hit method goes here
     public boolean hit()
     {
+       //addCardToHand(deal());
        return true;
     }
 }

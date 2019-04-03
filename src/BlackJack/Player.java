@@ -23,6 +23,7 @@ public class Player extends AbstractPlayer
 	//hit method goes here
      public boolean hit()
      {
+
         return true;
      }
 }
