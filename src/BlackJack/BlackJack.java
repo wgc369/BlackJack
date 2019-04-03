@@ -32,6 +32,7 @@ public class BlackJack
             player.addCardToHand(dealer.deal());
             dealer.addCardToHand(dealer.deal());
             int playerTotal = player.getHandValue();
+            int dealerTotal = dealer.getHandValue();
             out.println("\nPLAYER ");
             out.println("Hand Value :: " + playerTotal );
             out.println("Hand Size :: " + player.getHandSize() );
@@ -42,6 +43,7 @@ public class BlackJack
             {
                 
             }
+            while(dealerTotal<17)
 
 
         }while(choice=='y');
