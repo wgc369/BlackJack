@@ -50,6 +50,7 @@ public class Dealer extends AbstractPlayer
     public boolean hit()
     {
        //addCardToHand(deal());
+        addCardToHand(deal());
        return true;
     }
 }
